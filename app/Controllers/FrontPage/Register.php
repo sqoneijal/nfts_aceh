@@ -75,8 +75,8 @@ class Register extends Controller {
             $mail->isSMTP();
             $mail->Host       = 'smtp.gmail.com';
             $mail->SMTPAuth   = true;
-            $mail->Username   = 'sqone.developer@gmail.com';
-            $mail->Password   = 'izgruwzxzflgjleu';
+            $mail->Username   = '';
+            $mail->Password   = '';
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
             $mail->Port       = 465;
         
