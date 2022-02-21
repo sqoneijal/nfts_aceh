@@ -136,6 +136,7 @@ $routes->group('/', ['namespace' => 'App\Controllers\FrontPage'], function($rout
 $routes->group('admin', ['namespace' => 'App\Controllers\Admin'], function($routes) {
    $routes->group('dashboard', function($routes) {
       $routes->get('/', 'Dashboard::index');
+      $routes->get('getvisitor', 'Dashboard::getVisitor');
    });
 
    $routes->group('blogs', function($routes) {
