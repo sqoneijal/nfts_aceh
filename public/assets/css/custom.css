@@ -1,0 +1,116 @@
+.valid-feedback,
+.invalid-feedback {
+   display: block !important;
+}
+
+.has-danger > .form-control,
+.has-danger > .select2 > .selection > .select2-selection,
+.has-danger > .bootstrap-tagsinput {
+   border-color: #ff3d60 !important;
+   padding-right: calc(1.5em + 0.94rem);
+   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23ff3d60' viewBox='-2 -2 7 7'%3e%3cpath stroke='%23ff3d60' d='M0 0l3 3m0-3L0 3'/%3e%3ccircle r='.5'/%3e%3ccircle cx='3' r='.5'/%3e%3ccircle cy='3' r='.5'/%3e%3ccircle cx='3' cy='3' r='.5'/%3e%3c/svg%3E");
+   background-repeat: no-repeat;
+   background-position: right calc(0.375em + 0.235rem) center;
+   background-size: calc(0.75em + 0.47rem) calc(0.75em + 0.47rem);
+}
+
+.rnc__notification-container--top-right {
+   position: fixed !important;
+}
+
+.placeholder {
+   box-shadow: 0 2px 10px 0 rgba(33, 33, 33, 0.15);
+   border-radius: 2px;
+   position: relative;
+   overflow: hidden;
+   color: transparent;
+}
+.placeholder::before {
+   content: "";
+   display: block;
+   position: absolute;
+   top: 0;
+   height: 100%;
+   width: 150px;
+   background: linear-gradient(to right, transparent 0%, #e8e8e8 50%, transparent 100%);
+   animation: load 1s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+@keyframes load {
+   from {
+      left: -150px;
+   }
+   to {
+      left: 100%;
+   }
+}
+
+.space-y-20 {
+   --cb-space-y-reverse: 0;
+   margin-top: calc(20px * calc(1 - var(--cb-space-y-reverse)));
+   margin-bottom: calc(20px * var(--cb-space-y-reverse));
+}
+
+.reaction {
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -ms-flex-wrap: wrap;
+   flex-wrap: wrap;
+}
+
+.reaction .likes {
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-align: center;
+   -ms-flex-align: center;
+   align-items: center;
+}
+
+.reaction .likes {
+   margin-right: 10px;
+}
+
+.reaction .likes i {
+   -webkit-transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+   transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+   color: #ff6871;
+   font-weight: bold;
+}
+
+.reaction .likes span {
+   color: #6f7d95;
+}
+
+.reaction .comments,
+.reaction .views,
+.reaction .time,
+.reaction .share {
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-align: center;
+   -ms-flex-align: center;
+   align-items: center;
+}
+
+.reaction .comments,
+.reaction .views,
+.reaction .likes,
+.reaction .share {
+   margin-right: 10px;
+}
+
+.reaction .comments i,
+.reaction .views i,
+.reaction .time i,
+.reaction .share i {
+   color: #91a1bc;
+}
+
+.reaction .comments span,
+.reaction .views span,
+.reaction .time span,
+.reaction .share span {
+   color: #6f7d95;
+}
